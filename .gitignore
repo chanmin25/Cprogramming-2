@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /ch08-Assignment/ch08-Assignment.vcxproj
 /ch08-Assignment/ch08-Assignment.vcxproj.filters
+/ch10/ch10.vcxproj.filters
+/ch10/ch10.vcxproj
