@@ -76,8 +76,6 @@ void Am11()
 
     inventory(products, size);      // 무한 루프 종료 후 현재 재고 출력
     printf("프로그램을 종료합니다.\n");
-
-    return 0;
 }
 
 
