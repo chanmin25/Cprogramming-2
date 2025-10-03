@@ -19,23 +19,35 @@ int login_check(struct LOGIN user[], int size, char* id, char* pw)
 
 	for (i = 0; i < size; i++)
 	{
-		if (strcmp)
+		if (strcmp(id, user[i].USID) == 0 && strcmp(pw, user[i].USPW) == 0)		// 아이디와 패스워드가 일치하는 경우
+		return 1;		// 일치하는것을 찾았으면 성공(1)
 	}
+	return 0;		// 없으면 실패(0)
 }
 
 
 void Am03()
 {
-	struct LOGIN good;
+	struct LOGIN user[] = { { "guest", "qwer" } };		// 정보가 저장된 구조체 배열 초기화
+
+	int arr_size = sizeof(user) / sizeof(user[0]);		// 배열 크기 자동으로 계산
+	char ID[21];
+	char PW[21];
 
 	printf("ID? ");
-	scanf("%d", &good.USID);
+	scanf("%s", ID);		// %s 로 받을때는 이름만 쓴다
 
 	printf("PW? ");
-	scanf("%d", &good.USPW);
+	scanf("%s", PW);		// %s 로 받을때는 이름만 쓴다
 
-
-
+	if (login_check(user, arr_size, ID, PW) == 1)		// login_check 함수를 호출하여 결과 확인
+	{
+		printf("로그인 성공 \n");
+	}
+	else
+	{
+		printf("아이디 또는 패스워드가 틀렸습니다. \n");
+	}
 }
 
 int main()

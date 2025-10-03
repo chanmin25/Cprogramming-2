@@ -15,7 +15,7 @@
 
 void Am01()
 {
-	struct LOGIN user1;
+	struct LOGIN user1;		// 변수 선언
 	int i;
 
 	printf("ID? ");
@@ -27,8 +27,8 @@ void Am01()
 	printf("ID: %s\n", user1.USID);
 
 	printf("PW: ");
-	int PW_len = strlen(user1.USPW);
-	for (i = 0; i < PW_len; i++)
+	int PW_len = strlen(user1.USPW);	// 실제 길이를 구함
+	for (i = 0; i < PW_len; i++)		// 패스워드 길이만큼 반복하면서 * 출력
 	{
 		printf("*");
 	}

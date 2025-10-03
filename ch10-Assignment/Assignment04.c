@@ -13,7 +13,7 @@
 
 void Am04()
 {
-	struct DATE today;
+	struct DATE today;		// 변수 선언
 
 	printf("연? ");
 	scanf("%d", &today.year);
@@ -28,7 +28,7 @@ void Am04()
 	printf("\n");
 }
 
-void print_date(struct DATE d) {
+void print_date(struct DATE d) {			// 함수 정의 
 	printf("%d/ %d/ %d", d.year, d.mon, d.day);
 }
 
