@@ -1,9 +1,10 @@
 // 2차원 배열의 선언 및 사용
+
 #include <stdio.h>
 #define ROW 3
 #define COL 2
 
-int ex07_12(void) {
+int main(void) {
 	int data[ROW][COL];
 	int i, j, k;
 
@@ -14,7 +15,7 @@ int ex07_12(void) {
 	for (i = 0; i < ROW; i++) {
 		for (j = 0; j < COL; j++)
 			printf("%3d", data[i][j]);
-		printf("\n");
+		printf("\n");		// 행마다 줄바꿈 문자를 출력한다.
 	}
 
 	printf("sizeof(data) = %d\n", sizeof(data));

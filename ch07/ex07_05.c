@@ -1,4 +1,5 @@
 // 배열의 원소가 변수로서 사용되는 경우
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define ARR_SIZE 5
@@ -8,7 +9,7 @@ int add(int a, int b)		// int형의 매개변수를 갖는 함수
 	return a + b;
 }
 
-int ex07_05(void)
+int main(void)
 {
 	int arr[ARR_SIZE] = { 0 };		// 배열 전체를 0으로 초기화
 	int i;

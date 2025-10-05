@@ -1,9 +1,11 @@
 // print_array 함수의 정의 및 호출
+
 #include <stdio.h>
 #define MAX 10
+
 void print_array(int arr[], int size);		// 함수 선언
 
-int ex07_14(void)
+int main(void)
 {
 	int scores[] = { 99, 98, 67, 72, 90, 82 };
 	int size = sizeof(scores) / sizeof(scores[0]);

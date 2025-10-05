@@ -1,7 +1,8 @@
 // 배열에 대한 포인터의 선언 및 사용
+
 #include <stdio.h>
 
-int ex08_12(void)
+int main(void)
 {
 	int data[3][5] = {
 		{1, 2, 3, 4, 5},

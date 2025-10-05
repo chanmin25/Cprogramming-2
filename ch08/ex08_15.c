@@ -1,10 +1,12 @@
 // 배열을 입력 매개변수로 사용하는 함수
+
 #include <stdio.h>
 #define SIZE 10
+
 void copy_array(const int source[], int target[], int size);
 void print_array(const int arr[], int size);
 
-int ex08_15(void)
+int main(void)
 {
 	int x[SIZE] = { 10, 20, 30, 40, 50 };
 	int y[SIZE] = { 0 };

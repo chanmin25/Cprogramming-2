@@ -1,4 +1,5 @@
 // 포인터가 필요한 경우
+
 #include <stdio.h>
 
 void test1(int x)	// 매개변수 x는 main의 x로 초기화된 지역 변수
@@ -11,7 +12,7 @@ void test2(int* p)	// p는 main의 x의 주소로 초기화된 포인터이다.
 	*p = 20;		// p가 가리키는 변수, 즉 main의 x에 20을 대입한다.
 }
 
-int ex08_04(void)
+int main(void)
 {
 	int x = 10;
 	test1(x);		// main의 x를 함수의 매개변수 x로 복사해서 전달한다.

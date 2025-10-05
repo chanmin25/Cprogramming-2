@@ -1,8 +1,10 @@
 // 함수의 처리 결과를 매개변수로 전달하는 get_sum_product 함수
+
 #include <stdio.h>
+
 void get_sum_product(int x, int y, int* sum, int* product);
 
-int ex08_14(void)
+int main(void)
 {
 	int result1, result2;
 
@@ -12,7 +14,7 @@ int ex08_14(void)
 	return 0;
 }
 
-// 1. 처리 결과를 저장할 변수를 가리키는 포인터형으로 매개변수를 선언한다.
+	// 1. 처리 결과를 저장할 변수를 가리키는 포인터형으로 매개변수를 선언한다.
 void get_sum_product(int x, int y, int* sum, int* product)
 {
 	// 3. 포인터형의 매개변수가 가리키는 곳에 처리 결과를 저장한다.

@@ -1,7 +1,8 @@
 // 배열의 비교
+
 #include <stdio.h>
 
-int ex07_08(void)
+int main(void)
 {
 	int x[5] = { 10, 20, 30, 40, 50 };
 	int y[5] = { 10, 20, 30, 40, 50 };
@@ -14,7 +15,7 @@ int ex07_08(void)
 	is_equal = 1;			 // 배열의 내용이 같은지를 나타내는 변수
 	for (i = 0; i < 5; i++) {
 		if (x[i] != y[i]) {	 // 배열의 원소끼리 비교한다.
-			is_equal = 0;
+			is_equal = 0;	 // 서로 다른 원소가 있으면 더이상 비교할 필요가 없다.
 			break;
 		}
 	}

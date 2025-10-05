@@ -1,9 +1,10 @@
 // 2차원 배열의 초기화
+
 #include <stdio.h>
 #define ROW 3
 #define COL 2
 
-int ex07_13(void)
+int main(void)
 {
 	int data[ROW][COL] = {
 		{10, 20}, {30, 40}, {50, 60},

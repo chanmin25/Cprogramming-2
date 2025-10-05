@@ -1,9 +1,10 @@
 // 포인터의 바이트 크기 구하기
+
 #include <stdio.h>
 
-int ex08_01()
+int main()
 {
-	int* pi;
+	int* pi;		// *는 변수명 쪽으로 붙여준다.
 	double* pd;
 	char* pc;
 

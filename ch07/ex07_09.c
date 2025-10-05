@@ -1,8 +1,9 @@
 // ¹è¿­ÀÇ Å½»ö
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int ex07_09(void)
+int main(void)
 {
 	int data[] = { 78, 34, 52, 15, 63, 15, 25 };
 	int size;

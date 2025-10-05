@@ -1,7 +1,8 @@
 // 포인터의 사용
+
 #include <stdio.h>
 
-int ex08_03(void)
+int main(void)
 {
 	int x = 10;
 	int* p = &x;	// p는 x의 주소로 초기화한다.

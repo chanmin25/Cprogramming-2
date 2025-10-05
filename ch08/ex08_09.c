@@ -1,7 +1,8 @@
 // 포인터를 배열인 것처럼 사용하는 경우
+
 #include <stdio.h>
 
-int ex08_09(void)
+int main(void)
 {
 	int arr[5] = { 1, 2, 3, 4, 5 };
 	int* p = arr;	// 배열의 이름, 배열의 시작 주소, &arr[0]은 모두 같다.

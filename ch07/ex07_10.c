@@ -1,13 +1,15 @@
 // 탐색의 성공, 실패를 확인하는 경우
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int ex07_10(void)
+int main(void)
 {
 	int data[] = { 78, 34, 52, 15, 63, 15, 25 };
 	int size;
 	int key, i;
 	int found;		// 탐색이 성공하면 1, 실패하면 0 
+
 	size = sizeof(data) / sizeof(data[0]);
 	printf("arr = ");
 	for (i = 0; i < size; i++)

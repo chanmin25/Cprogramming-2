@@ -1,7 +1,8 @@
 // 포인터 배열의 선언 및 사용
+
 #include <stdio.h>
 
-int ex08_11(void)
+int main(void)
 {
 	int a, b, c, d, e;
 	int* arr[5] = { &a, &b, &c, &d, &e };		// 포인터 배열

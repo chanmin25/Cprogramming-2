@@ -1,7 +1,8 @@
 // '포인터+정수' 연산의 결과
+
 #include <stdio.h>
 
-int ex08_06(void)
+int main(void)
 {
 	int* p = (int*)0x100;	// 포인터 연산을 확인하기 위해 절대 주소를 대입한다.
 	double* q = (double*)0x100;

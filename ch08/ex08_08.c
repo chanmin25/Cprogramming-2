@@ -1,16 +1,17 @@
 // 배열의 0번 원소를 가리키는 포인터에 증감 연산을 수행한 결과
+
 #include <stdio.h>
 
-int ex08_08(void)
+int main(void)
 {
 	int arr[5] = { 1, 2, 3, 4, 5 };
-	int* p = &arr[0];
+	int* p = &arr[0];			// arr[0]의 주소를 p에 저장한다.
 	int i;
 
-	for (i = 0; i < 5; i++, p++)
+	for (i = 0; i < 5; i++, p++)	// p는 &arr[0]~&arr[4]의 값이 된다.
 	{
-		printf("p= %p, ", p);
-		printf("*p = %d\n", *p);
+		printf("p= %p, ", p);		// p가 가리키는 원소가 계속 바뀐다.
+		printf("*p = %d\n", *p);	// p가 역참조하는 원소도 계속 바뀐다.
 	}
 
 	return 0;
